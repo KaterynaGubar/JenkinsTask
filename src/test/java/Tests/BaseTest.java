@@ -1,7 +1,6 @@
 package Tests;
 
 import com.codeborne.selenide.Configuration;
-import core.DriverFactory;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -16,10 +15,7 @@ public abstract class BaseTest {
 
     @BeforeTest
     public void init() throws MalformedURLException {
-        webDriver = DriverFactory.getDriver("chrome");
-        webDriver.manage().window().maximize();
-
-        //Configuration.browser = "chrome";
+        Configuration.browser = "chrome";
     }
 
     @BeforeMethod
