@@ -1,8 +1,8 @@
 package Tests;
 
 import com.codeborne.selenide.Configuration;
-import com.epam.Andrii_Yavtushenko.Page.LoginForm;
-import com.epam.Andrii_Yavtushenko.Page.MainPage;
+import com.epam.Kateryna_Gubar.Page.LoginForm;
+import com.epam.Kateryna_Gubar.Page.MainPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;

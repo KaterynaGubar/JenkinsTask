@@ -1,4 +1,4 @@
-package com.epam.Andrii_Yavtushenko.Page;
+package com.epam.Kateryna_Gubar.Page;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
