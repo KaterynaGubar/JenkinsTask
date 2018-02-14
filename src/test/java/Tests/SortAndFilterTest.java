@@ -1,32 +1,18 @@
 package Tests;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.epam.Kateryna_Gubar.Page.MainPage;
 import com.epam.Kateryna_Gubar.Page.ProductsPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.*;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.open;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SortAndFilterTest {
-    @BeforeTest
-    public void init() {
-
-        Configuration.browser = "chrome";
-    }
-
-    @BeforeMethod
-    public void openMainPage() {
-        open("https://pn.com.ua/");
-    }
+public class SortAndFilterTest extends BaseTest{
 
     @Test
     public void searchInCategory() {

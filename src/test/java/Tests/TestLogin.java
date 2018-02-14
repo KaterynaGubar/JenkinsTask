@@ -1,30 +1,17 @@
 package Tests;
 
-import com.codeborne.selenide.Configuration;
 import com.epam.Kateryna_Gubar.Page.LoginForm;
 import com.epam.Kateryna_Gubar.Page.MainPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.close;
+import static com.codeborne.selenide.Selenide.switchTo;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
-public class TestLogin {
-
-    @BeforeTest
-    public void init() {
-        Configuration.browser = "chrome";
-    }
-
-    @BeforeMethod
-    public void openMainPage() {
-        open("https://pn.com.ua/");
-    }
-
+public class TestLogin extends BaseTest {
     @Test
     public void invalidLogin() {
         MainPage mainPage = new MainPage();
