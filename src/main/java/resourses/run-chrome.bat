@@ -1,0 +1,1 @@
+start cmd.exe @cmd /k Java -DbrowserType="chrome" -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.8.1.jar -role node -nodeConfig node2.json"

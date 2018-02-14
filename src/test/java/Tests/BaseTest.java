@@ -19,7 +19,7 @@ public abstract class BaseTest {
         webDriver = DriverFactory.getDriver("chrome");
         webDriver.manage().window().maximize();
 
-        Configuration.browser = "chrome";
+        //Configuration.browser = "chrome";
     }
 
     @BeforeMethod
