@@ -1,8 +1,0 @@
-<suite name="Suite1" verbose="1">
-    <test name="TestName1">
-
-        <classes>
-            <class name="myTests.MyTestSuite"/>
-        </classes>
-    </test>
-</suite>
